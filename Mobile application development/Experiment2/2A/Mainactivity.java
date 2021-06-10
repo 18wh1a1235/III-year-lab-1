@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@18wh1a1235 
-Satya-Anusha
-/
-III-year-Lab
-1
-06
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-III-year-Lab/MobileApplicationDevelopmentLab/Experiment2/2A/MainActivity.java /
-@Satya-Anusha777
-Satya-Anusha777 Include eperiment 2
-Latest commit 6f0ffbd on 27 Apr
- History
- 1 contributor
-89 lines (84 sloc)  3.03 KB
-  
 package com.example.experiment2a;
 
 import androidx.annotation.NonNull;
@@ -117,16 +87,3 @@ public class MainActivity extends AppCompatActivity {
         tv5.setText("Gender: " + st4);
     }
 }
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
