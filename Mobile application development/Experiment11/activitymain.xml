@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Shared Preferences"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="285dp"
+        android:layout_height="54dp"
+        android:layout_below="@+id/textview"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter your Name"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="287dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/edit1"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter your Age"
+        android:padding="10dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupGender"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit2"
+        android:layout_marginTop="48dp">
+
+        <RadioButton
+            android:id="@+id/radioMale"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit2"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:checked="false"
+            android:text="Male"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioMale"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:checked="false"
+            android:text="Female"
+
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroupGender"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="52dp"
+        android:onClick="showContent"
+        android:text="Show" />
+
+    <Button
+        android:id="@+id/clear_text"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="233dp"
+        android:layout_marginTop="405dp"
+        android:onClick="clearContent"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/showButtton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroupGender"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="140dp"
+        android:onClick="saveContent"
+        android:text="Save/Update" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="220dp"
+        android:text="Gender" />
+</RelativeLayout>
